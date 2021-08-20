@@ -1,78 +1,44 @@
-.boton2{
-  text-decoration: none;
-  padding: 3px;
-  font-weight: 6000;
-  font-size: 15px;
-  color: black;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid black;
-  }
+body {
+	background: url(../img/fondo8.jpg);
+	background-size: cover;
+}
 
-.boton3{
-  text-decoration: none;
-  padding: 3px;
-  font-weight: 6000;
-  font-size: 15px;
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-  border: 1px solid black;
-  }
+header{
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0,.5);
+}
 
 .inp{
   box-shadow: 0;
   border: 0;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .3);
   width: 25%;
   height: 30px;
   border: solid 2px gray;
   font-size: 15px;
-  font-color: #fff;
+  color: #333;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   text-align: left;
   transition: all 250ms ease;
+	outline: none;
+	margin-top: 5px;
 }
 
-.boton4{
-  text-decoration: none;
-  padding: 3px;
-  font-weight: 6000;
-  font-size: 15px;
-  color: white;
-  background-color: blue;
-  border-radius: 5px;
-  border: 1px solid black;
-  }
-
-.boton5{
-  text-decoration: none;
-  padding: 3px;
-  font-weight: 6000;
-  font-size: 15px;
-  color: white;
-  background-color: grey;
-  border-radius: 5px;
-  border: 1px solid black;
-  }
-
-body {	
-	background: url(../img/fondo.jpg);
-	background-size: cover;
+.contenedor__title /*IMPLEMENTAR METODOLOGIA BEM*/ {
+  margin-left: 30px;
+  font-size: 30px;
+	color: #FFFFFF;
+  font-family: 'Libre Baskerville', serif;
 }
 
-#contenedor {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/fondo8.jpg);
-  background-size: cover;
-}
-
-#ventana {
+.ventana {
   background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 	color: #fff;
@@ -85,33 +51,107 @@ body {
   font-size: 15px;
 }
 
-.menulista {
-  display: inline-block;
+.button-accept{
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  color: #fff;
+  background-color: #444;
 }
 
-.opciones{
-
-  color: black;
-
+.button-accept:hover {
+  background-color: #fff;
+	color: #444;
 }
 
-.lista li{
-  display: inline-block;
+.button-accept:focus{
+	color: #fff;
+	background: linear-gradient(to bottom, transparent, #444);
+  outline: none;
 }
 
-.lista li a:hover{
-  background: #fff;
-  color: #333;
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
 
-.lista li a{
-  color: black;
-  text-decoration: none;
-  padding: 5px 20px;
-  font-family: poppins;
-  font-size: 20px;
+.button-red{
+  color: #fff;
+  background-color: #f33;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #f33;
 }
 
-.lista {
-  text-align: center;
+.button-red:hover {
+  color: #f33;
+  background-color: #fff;
+  border: .5px solid #f33;
+}
+
+
+.button-red:focus{
+  background: linear-gradient(to bottom, #faa, #b00);
+  outline: none;
+  color: #fff;
+}
+
+.button-blue{
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #3498db;
+	margin-right: 5px;
+}
+
+.button-blue:hover {
+  color: #3498db;
+  background-color: #fff;
+  border: .5px solid #3498db;
+}
+
+.button-blue:focus{
+  background: linear-gradient(to bottom, #aed6f1, #2874a6);
+  outline: none;
+  color: #fff;
+}
+
+.button-green{
+  color: #fff;
+  background-color: #1abc9c;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #1abc9c;
+}
+
+.button-green:hover {
+  color: #1abc9c;
+  background-color: #fff;
+  border: .5px solid #1abc9c;
+}
+
+.button-green:focus{
+  background: linear-gradient(to bottom, #a3e4d7,  #117864);
+  outline: none;
+  color: #fff;
+}
+
+.button-grey{
+	padding: 3px;
+  color: #fff;
+  background-color: #444;
+	border: .1px solid #444;
+	font-size: 14.3px;
+}
+
+.button-grey:hover {
+	color: #444;
+  background-color: #fff
+}
+
+.button-grey:focus{
+	color: #fff;
+	background: linear-gradient(to bottom, #aaa, #111);
+  outline: none;
 }
